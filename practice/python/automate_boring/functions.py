@@ -4,7 +4,7 @@ def spam(divideBy):
     try:
         return 42 / divideBy
     except ZeroDivisionError as e:
-        print(e);
+        print("Exception: ", e);
 
 print(spam(2))
 print(spam(12))
