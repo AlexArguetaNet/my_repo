@@ -1,3 +1,5 @@
+import pprint
+
 # Dictionaries (hash table) uses key-value pairs instead
 # of indeces to location values inside this
 # data structure
@@ -62,6 +64,18 @@ spam = {'name': 'Pooka', 'age': 5}
 spam.setdefault('color', 'black')
 print(spam.get('color', 0))
 
+
+# Using pprint() to print a formatted
+# key-value pair
+pprint.pprint(spam)
+
+# Represnting a tic-tac-toe board using a hash table
+# [O][O][O]
+# [X][X][ ]
+# [ ][ ][X]
+board = {'topL': 'O', 'topM': 'O', 'topR': 'O',
+         'midL': 'X', 'midM': 'X', 'midR': ' ',
+         'lowL': ' ', 'lowM': ' ', 'lowR': 'X'}
 
 
 
