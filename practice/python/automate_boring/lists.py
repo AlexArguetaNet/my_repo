@@ -31,5 +31,10 @@ animals = ['ants', 'cats', 'dogs', 'badgers', 'elephants']
 animals.sort(reverse=True) # Reverse list
 print(animals)
 
+names = ['Alice', 'ants', 'Bob', 'badgers', 'Carol', 'cats']
+names.sort(key=str.lower)
+print(names)
 
-
+# The forward slash conitnues the satement on the next line
+print('Four score and seven ' + \
+      'years ago...')
