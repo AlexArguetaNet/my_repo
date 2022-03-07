@@ -78,6 +78,5 @@ board = {'topL': 'O', 'topM': 'O', 'topR': 'O',
          'lowL': ' ', 'lowM': ' ', 'lowR': 'X'}
 
 
-
-
+print(board['topL'])
 
