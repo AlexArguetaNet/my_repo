@@ -14,3 +14,22 @@ p.write_text('Hello there')
 print(p.read_text())
 
 
+# Using file object to perform I/O operations
+
+baconFile = open('practice\\python\\automate_boring\\files\\bacon.txt', 'w') # Writing to file
+baconFile.write('Hello bacon!')
+baconFile.write('Bacon is not a vegtable.')
+
+baconFile.close()
+
+baconFile = open('practice\\python\\automate_boring\\files\\bacon.txt')
+content = baconFile.read() # Reading from a file
+
+baconFile.close()
+
+print(content)
+
+
+
+
+
