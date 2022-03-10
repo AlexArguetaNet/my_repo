@@ -12,4 +12,25 @@ try:
 except Exception as e:
     print(e)
 
-print(res.text)
+# Passing a url as an argument
+# BeautifulSoup takes 2 arguments: A string of text, a string of the parsing
+#                                  method
+noStrachSoup = bs4.BeautifulSoup(res.text, 'html.parser')
+
+
+exFile = open('practice\\python\\automate_boring\\web_scraping\\html\\example.html')
+
+# Passing the content of an html file 
+exSoup = bs4.BeautifulSoup(exFile.read(), 'html.parser')
+
+# Get elements with an id attribute of author
+elems = exSoup.select('#author')
+
+print(elems[0].getText()) # Print first element of elems list
+
+# Get all p tag elements
+elemsP = exSoup.select('p')
+print(elemsP[0].getText())
+
+
+
