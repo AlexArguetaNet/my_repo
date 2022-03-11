@@ -9,7 +9,7 @@ import webbrowser
 
 # search result selector = .sg-col-inner
 
-res = requests.get('https://www.amazon.com/s?k=cpu')
+res = requests.get('https://www.amazon.com')
 
 
 try:
@@ -17,6 +17,8 @@ try:
 except Exception as e:
     print('STATUS ERROR: ', e)
     sys.exit()
+
+
 
 
 
